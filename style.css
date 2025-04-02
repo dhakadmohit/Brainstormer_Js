@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'poppins',sans-serif; */
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: wheat;
+    overflow: hidden;
+}
+.main-page{
+   background: wheat;
+   height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+.credentials{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    display: block;
+}
+.final-score{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    display: none;
+}
+
+.get-info h4{
+    font: 700;
+    font-size: 20px;
+    color: brown;
+}
+
+.final-score h1{
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 6px;
+    background: rgba(193, 193, 207, 0.486);
+    border-radius: 10px;
+}
+/* #Final-Score-Display{
+    height: 20px;
+    width: 90px;
+    border: 2px solid rgb(203, 60, 60);
+    padding: 20px;
+    border-radius: 11px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* display: none; */*/
+
+#start:hover{
+    background: gainsboro;
+}
+#firstName{
+    /* font-size: 14px; */
+    font-weight: 700;
+}
+#firstName:hover{
+    background: beige;
+}
+.credentials h1{
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 6px;
+}
+.get-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    align-items: center;
+}
+.get-info h2{
+    font-size: 30px;
+}
+.get-info input{
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 300px;
+}
+.get-info button{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    width: 200px;
+    padding: 20px;
+    /* margin-left: 65px; */
+    font-size: 20px;
+    color: white;
+    background: rgba(46, 48, 46, 0.689);
+}
+nav{
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    width: 100%;
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+.cir-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 3%;
+    top: 16%;
+    cursor: pointer;
+transition: all ease 0.3s;
+
+}
+.cir-1{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: 65%;
+transition: all ease 0.3s;
+
+}
+.cir-1:hover{
+    background: rgba(128, 128, 128, 0.333);
+}
+.cir-2:hover{
+    background: grey;
+}
+.cir-3:hover{
+    background: grey;
+}
+.cir-4:hover{
+    background: grey;
+}
+
+.cir-2{
+    cursor: pointer;
+transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 23%;
+    top: 46%;
+}
+.cir-3{
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 55%;
+    top: 28%;
+}
