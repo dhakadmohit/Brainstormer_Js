@@ -41,11 +41,6 @@ html,body{
     display: none;
 }
 
-.get-info h4{
-    font: 700;
-    font-size: 20px;
-    color: brown;
-}
 
 .final-score h1{
     cursor: pointer;
@@ -135,7 +130,28 @@ nav{
 }
 
 @media (max-width: 768px) {
+
+   
+
+    .credentials{
+        width: 100%;
+     
+    }
+    .get-info{
+        width: 90%;
+    }
+    .final-score{
+        width: 100%;
+    }
+    .final-score h1{
+        font-size:40px;
+        margin-top: 25px;
+    }
+
     nav {
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
         padding: 10px; /* Reduce padding on smaller screens */
     }
 }
@@ -153,11 +169,12 @@ nav{
     left: 3%;
     top: 16%;
     cursor: pointer;
-transition: all ease 0.3s;
-
+    transition: all ease 0.3s;
 }
 .cir-1{
     cursor: pointer;
+    transition: all ease 0.3s;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,8 +187,6 @@ transition: all ease 0.3s;
     position: absolute;
     left: 80%;
     top: 65%;
-transition: all ease 0.3s;
-
 }
 .cir-1:hover{
     background: rgba(128, 128, 128, 0.333);
@@ -188,7 +203,8 @@ transition: all ease 0.3s;
 
 .cir-2{
     cursor: pointer;
-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+
     display: flex;
     align-items: center;
     justify-content: center;

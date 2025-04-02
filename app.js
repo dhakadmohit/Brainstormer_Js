@@ -46,7 +46,7 @@ function gameOver() {
         bestScore = score; // Update best score
     }
 
-    finalScoreDisplay.innerHTML = `Final Score: ${score}<br>Best Score: ${bestScore}`;
+    finalScoreDisplay.innerHTML = `Final Score: ${score}<br> <br> Best Score: ${bestScore}`;
 }
 
 // Function to restart the game
@@ -136,9 +136,11 @@ function getOriginal(text) {
     else if (sign == "-") score -= tempScore;
     else if (sign == "+") score += tempScore;
 
-    document.querySelector("#Score").innerHTML = `Score: ${score}`;
+    score =Math.floor(score)
+    document.querySelector("#Score").innerHTML = `Score: ${Math.floor(score)}`;
 }
 
+// Click event listener for circles
 // Click event listener for circles
 document.querySelector(".main-page").addEventListener("click", function (e) {
     if (e.target.classList.contains("cir-1") || 
@@ -149,9 +151,19 @@ document.querySelector(".main-page").addEventListener("click", function (e) {
         let h1Element = e.target.querySelector("h1"); 
         if (h1Element) {
             getOriginal(h1Element.innerText);
+            
+            // Clear previous interval & restart
+            clearInterval(gameInterval);
+            moveCircles(); // Move circles immediately
+            gameInterval = setInterval(moveCircles, 2000); // Restart interval
         }
     } else if (e.target.tagName === "H1") {
         getOriginal(e.target.innerText);
+        
+        // Clear previous interval & restart
+        clearInterval(gameInterval);
+        moveCircles(); // Move circles immediately
+        gameInterval = setInterval(moveCircles, 2000); // Restart interval
     }
 });
 
